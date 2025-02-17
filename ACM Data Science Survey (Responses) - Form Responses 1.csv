@@ -1,0 +1,105 @@
+Timestamp,Do you live on campus(near-campus apartments or on campus apartments/dorms) or commute(living in a house off campus UCR)?,"How far is your commute to campus? (0 (I live on campus), 1-5, 6-10, 11-20, 21+ miles)",What is your primary mode of transportation?,"How satisfied are you with the availability of parking, public transit, or other facilities on campus?",Do you feel your living situation affects your participation in campus activities?,"How many on-campus organizations are you actively involved in (including attending meetings, participating in events)?","On a scale of 1-5, how fulfilled do you feel about your social life?",How many hours of sleep do you get on average?(write the numerical value Ex. 10 or 1 ),"How many meals do you eat per day? (0, 1, 2, 3, 4, 5+)"
+1/21/2025 22:19:43,Commuter,1-5,Scooter or Bicycle,Neutral,No,2-3,3,7,2
+1/21/2025 22:19:48,Commuter,6-10,Scooter or Bicycle,Very satisfied,Yes,0-1,5,8,3
+1/21/2025 22:19:58,Commuter,1-5,Scooter or Bicycle,Satisfied,Maybe,0-1,3,8,2
+1/21/2025 22:30:04,Commuter,1-5,Car,Dissatisfied,Yes,0-1,3,6,3
+1/21/2025 22:32:44,Commuter,1-5,,Satisfied,No,4-5,4,8,3
+1/21/2025 23:14:54,Commuter,1-5,Scooter or Bicycle,Neutral,No,2-3,3,5,2
+1/21/2025 23:29:07,Commuter,1-5,Scooter or Bicycle,Neutral,Maybe,0-1,3,6,2
+1/22/2025 11:58:09,On-campus,0,Walking,Neutral,No,2-3,2,5-6,2
+1/22/2025 11:59:05,On-campus,0,Walking,Neutral,Yes,2-3,3,7,2
+1/22/2025 12:01:06,On-campus,1-5,Walking,,Yes,2-3,3,6,3
+1/22/2025 12:10:10,On-campus,1-5,Walking,Satisfied,Maybe,2-3,3,8,2
+1/22/2025 12:11:48,On-campus,0,Walking,Neutral,Yes,2-3,4,10,2
+1/22/2025 12:28:09,Commuter,1-5,Car,Neutral,Yes,2-3,4,7,3
+1/22/2025 12:28:33,On-campus,0,Walking,Neutral,No,2-3,5,6-8,2
+1/22/2025 12:36:59,On-campus,0,Walking,Neutral,Yes,2-3,3,11,2
+1/22/2025 12:57:39,On-campus,0,Walking,Neutral,Yes,0-1,4,6,2
+1/22/2025 13:26:27,On-campus,1-5,Scooter or Bicycle,Dissatisfied,Yes,0-1,3,6,2
+1/22/2025 13:28:15,On-campus,0,Walking,Neutral,Yes,2-3,3,5,2
+1/22/2025 13:53:28,On-campus,6-10,If you can’t walk CRAWLLLL,Very satisfied,Yes,6+,3,1,3
+1/22/2025 15:00:41,Commuter,1-5,Car,Very satisfied,No,0-1,3,5-7,2
+1/22/2025 16:18:55,Commuter,1-5,Car,Dissatisfied,No,2-3,4,6,2
+1/22/2025 16:19:07,Commuter,11-20,Car,Neutral,Yes,0-1,1,7,2
+1/22/2025 16:44:56,On-campus,0,Walking,Very satisfied,Yes,0-1,3,6,3
+1/22/2025 16:54:48,Commuter,11-20,Public Transport,Satisfied,Yes,2-3,4,8,3
+1/22/2025 16:59:25,Commuter,11-20,Car,Satisfied,Yes,2-3,3,6,4
+1/22/2025 17:07:45,On-campus,0,Walking,Satisfied,Maybe,0-1,3,7,2
+1/22/2025 17:40:58,On-campus,11-20,Walking,Neutral,Yes,0-1,1,7-8,4
+1/22/2025 22:27:47,Commuter,6-10,Car,Very satisfied,No,0-1,5,7,3
+1/23/2025 9:43:14,On-campus,0,Walking,Satisfied,No,4-5,3,7-9,3
+1/23/2025 9:52:06,On-campus,0,Walking,Dissatisfied,Yes,2-3,3,8 hours,3
+1/23/2025 10:04:30,Commuter,6-10,Car,Dissatisfied,Yes,2-3,1,6,2
+1/23/2025 10:11:38,On-campus,,Walking,Neutral,Yes,0-1,4,7,2
+1/23/2025 11:03:21,Commuter,21+,Car,Neutral,Yes,0-1,3,9,2
+1/23/2025 11:14:06,Commuter,11-20,Car,Neutral,Yes,4-5,4,8,1
+1/23/2025 11:18:31,On-campus,0,Walking,Neutral,Yes,0-1,1,6,2
+1/23/2025 11:33:36,Commuter,6-10,Car,Satisfied,No,0-1,3,7,3
+1/23/2025 11:50:30,Commuter,21+,Car,Dissatisfied,Yes,0-1,1,6-7,2
+1/23/2025 12:40:58,On-campus,0,Walking,Satisfied,Yes,2-3,3,7,2
+1/23/2025 12:49:50,On-campus,0,Walking,Neutral,Yes,2-3,3,7,2
+1/23/2025 13:14:02,Commuter,11-20,Car,Neutral,Yes,0-1,3,7,2
+1/23/2025 13:14:02,Commuter,21+,Boat,Very dissatisfied,Yes,6+,3,6,5+
+1/23/2025 13:17:37,On-campus,0,Walking,Neutral,No,2-3,3,7,3
+1/23/2025 13:19:35,Commuter,6-10,Public Transport,Satisfied,Yes,0-1,5,7,2
+1/23/2025 13:40:21,Commuter,1-5,Public Transport,Very satisfied,Maybe,0-1,3,7,3
+1/23/2025 13:41:31,Commuter,21+,Car,Neutral,No,2-3,5,3,1
+1/23/2025 13:41:39,Commuter,21+,Car,Neutral,Yes,0-1,2,5,1
+1/23/2025 13:44:21,Commuter,11-20,Car,Satisfied,Maybe,0-1,5,6,2
+1/23/2025 13:51:59,Commuter,21+,Car,Satisfied,No,2-3,5,7,3
+1/23/2025 14:16:36,Commuter,21+,Car,Dissatisfied,Yes,0-1,3,7,2
+1/23/2025 14:18:46,On-campus,0,Walking,Satisfied,Maybe,0-1,3,7,2
+1/23/2025 14:40:03,Commuter,21+,Car,Satisfied,Yes,0-1,1,6-8,2
+1/23/2025 15:17:31,Commuter,1-5,Public Transport,Satisfied,Yes,0-1,2,7,1
+1/23/2025 15:24:07,Commuter,6-10,Car,Dissatisfied,No,0-1,4,7,2
+1/23/2025 15:38:34,Commuter,21+,Car,Dissatisfied,Yes,0-1,2,8,2
+1/23/2025 16:04:14,On-campus,0,Walking,Dissatisfied,Maybe,0-1,4,7,2
+1/23/2025 16:21:17,On-campus,0,Walking,Neutral,Yes,4-5,4,7,2
+1/23/2025 16:37:49,Commuter,21+,Car,Neutral,Yes,0-1,4,6,2
+1/23/2025 16:40:13,Commuter,1-5,Car,Dissatisfied,Maybe,0-1,2,6,2
+1/23/2025 17:07:31,Commuter,6-10,Public Transport,Very satisfied,Yes,0-1,3,8,2
+1/23/2025 17:37:05,Commuter,1-5,Car,Neutral,Maybe,2-3,3,3,3
+1/23/2025 17:40:38,Commuter,1-5,Car,Dissatisfied,No,6+,4,6,2
+1/23/2025 18:10:41,Commuter,6-10,Car,Very dissatisfied,Yes,0-1,4,7,3
+1/23/2025 18:32:46,Commuter,21+,Car,Satisfied,Yes,0-1,2,7,2
+1/23/2025 18:49:49,Commuter,11-20,Car,Neutral,Yes,0-1,3,4-5 ,2
+1/23/2025 19:12:30,On-campus,1-5,Walking,Neutral,Yes,2-3,3,9,3
+1/23/2025 19:48:12,On-campus,1-5,Car,Neutral,Yes,0-1,3,5,2
+1/23/2025 19:57:20,On-campus,0,Walking,Neutral,Yes,0-1,3,7,2
+1/23/2025 21:55:13,Commuter,11-20,Car,Dissatisfied,Yes,2-3,5,7,2
+1/23/2025 21:59:18,On-campus,0,Public Transport,Neutral,Yes,2-3,3,6,2
+1/23/2025 23:36:01,On-campus,0,Walking,Dissatisfied,No,0-1,3,7,3
+1/23/2025 23:42:56,Commuter,21+,Car,Dissatisfied,Yes,2-3,5,7,3
+1/23/2025 23:47:15,On-campus,0,Walking,Dissatisfied,No,2-3,3,8,2
+1/23/2025 23:49:57,On-campus,1-5,Car,Dissatisfied,Maybe,0-1,5,7,2
+1/24/2025 0:10:17,Commuter,11-20,Car,Dissatisfied,Yes,0-1,4,6,1
+1/24/2025 0:59:26,Commuter,1-5,Car,Neutral,No,2-3,5,5,2
+1/24/2025 1:12:07,On-campus,0,Walking,Dissatisfied,Yes,0-1,3,6,1
+1/24/2025 2:39:36,On-campus,0,Walking,Dissatisfied,No,2-3,5,7,2
+1/24/2025 8:43:58,On-campus,1-5,Public Transport,Satisfied,Yes,0-1,4,7,3
+1/24/2025 10:06:42,On-campus,0,Walking,Very satisfied,Yes,0-1,3,7,3
+1/24/2025 10:28:15,On-campus,0,Walking,Satisfied,Yes,2-3,3,7-8,1
+1/24/2025 10:41:48,On-campus,0,Walking,Neutral,Yes,2-3,3,7,2
+1/24/2025 10:59:40,On-campus,0,Walking,Neutral,Yes,2-3,3,6,3
+1/24/2025 11:13:59,On-campus,1-5,Scooter or Bicycle,Satisfied,Maybe,2-3,3,7.5,2
+1/24/2025 12:01:35,Commuter,11-20,Car,Dissatisfied,Yes,0-1,1,6-7,1
+1/24/2025 17:25:36,On-campus,1-5,Walking,Neutral,Yes,0-1,4,7,3
+1/24/2025 17:26:44,On-campus,0,Walking,Neutral,Maybe,0-1,3,,2
+1/24/2025 17:32:14,On-campus,0,Walking,Neutral,Maybe,0-1,4,6,3
+1/24/2025 17:36:04,Commuter,21+,Car,Dissatisfied,Yes,0-1,1,6,2
+1/24/2025 17:45:58,Commuter,1-5,Public Transport,Satisfied,Yes,2-3,5,8,3
+1/24/2025 17:56:17,Commuter,11-20,Car,Neutral,No,2-3,3,6,1
+1/24/2025 18:01:30,Commuter,1-5,Walking,Dissatisfied,No,0-1,3,7,2
+1/24/2025 18:41:55,Commuter,21+,Car,Dissatisfied,Yes,2-3,5,6,1
+1/25/2025 4:23:27,Commuter,11-20,Car,Very dissatisfied,Yes,0-1,4,5,2
+1/25/2025 12:05:27,On-campus,0,Scooter or Bicycle,Neutral,No,2-3,2,6,3
+1/26/2025 11:05:17,Commuter,1-5,Scooter or Bicycle,Dissatisfied,No,2-3,5,6,2
+1/27/2025 15:03:51,Commuter,1-5,Public Transport,Neutral,Maybe,2-3,4,7,1
+1/27/2025 16:20:21,On-campus,0,Scooter or Bicycle,Dissatisfied,No,4-5,5,6,2
+1/27/2025 17:12:02,Commuter,1-5,Scooter or Bicycle,Satisfied,Maybe,0-1,4,6,3
+1/27/2025 19:00:43,On-campus,0,Scooter or Bicycle,Neutral,No,2-3,2,7,3
+1/27/2025 22:03:57,Commuter,21+,Car,Dissatisfied,Yes,0-1,1,6,2
+1/29/2025 16:39:10,Commuter,11-20,Car,Very dissatisfied,Yes,2-3,3,8,2
+1/29/2025 18:31:27,On-campus,0,Walking,Dissatisfied,No,2-3,4,6,2
+1/30/2025 13:10:01,Commuter,11-20,Car,Very dissatisfied,Yes,0-1,3,6,1
+2/2/2025 16:05:27,Commuter,11-20,Car,Satisfied,Yes,0-1,1,6,2

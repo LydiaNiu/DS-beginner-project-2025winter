@@ -29,43 +29,98 @@ ggplot2 -> the package to visualize the data
 # imports the dataset into variable "df"
 # update the path to match path of your local file
 
-df <- read.csv("ACM Data Science Survey (Responses) - Form Responses 1.csv")
-
-# prints out the first few lines of the dataset
-head(df,5)
+df_uncleaned <- read.csv("ACM Data Science Survey (Responses) - Form Responses 1.csv")
+colnames(df_uncleaned) <- c("time_stamp", "identity", "distance", "transportation", 
+                  "parking_satisfication", "activity_participation", "org_count", 
+                  "social_satisfication", "sleep_amount", "meals_count")
 ```
 
 ```{r}
-# dataset fills empty slots with "", not NA.
-#so when we test is.na, the sum is 0
-sum (is.na(df))
-sum(is.na(df$`What.is.your.primary.mode.of.transportation.`))
+# check how many data has empty string/NA
+sum(df_uncleaned == "", na.rm = TRUE)
+# convert "" into NA
+df_uncleaned[df_uncleaned == ""] <- NA
+# check again
+sum(df_uncleaned == "", na.rm = TRUE)
+sum(is.na(df_uncleaned))  # answer: 4
 
-# count how many responses are missing in each column
-sum(df == "")
+# delete the rows that has NA included
+df <- na.omit(df_uncleaned)
 
-sum(df$`What.is.your.primary.mode.of.transportation.` == "")
-sum(df$`Do you live on campus(near-campus apartments or on campus apartments/dorms) or commute(living in a house off campus UCR)?` == "")
-sum(df$`How far is your commute to campus? (0 (I live on campus), 1-5, 6-10, 11-20, 21+ miles)` == "")
-sum(df$`How satisfied are you with the availability of parking, public transit, or other facilities on campus?` == "")
-sum(df$`Do you feel your living situation affects your participation in campus activities?` == "")
-sum(df$`How many on-campus organizations are you actively involved in (including attending meetings, participating in events)?` == "")
-sum(df$`On a scale of 1-5, how fulfilled do you feel about your social life?` == "")
-sum(df$`How many hours of sleep do you get on average?(write the numerical value Ex. 10 or 1 )` == "")
-sum(df$`How many meals do you eat per day? (0, 1, 2, 3, 4, 5+)` == "")
+# check again, should be 0 for both NA and ""
+sum (is.na(df)) 
+sum(df == "", na.rm = TRUE)
 
-# now we know there's one response missing in the column "What.is.your.primary.mode.of.transportation."
+df
+```
+
+## Hypothesis: Living Situation and Social Fulfillment
+Students living on-campus report feeling more socially fulfilled (higher ratings on a scale of 1-5) 
+and being more involved to the on-campus organizations compared to commuters.
+
+Null Hypothesis (H₀):
+There is no significant difference in social satisfaction and involvement in 
+campus organizations between studnets who live on-campus or commute.
+
+variables will be using:
+
+1. identity (chr): commuter vs on-campus
+2. activity_participation (char): yes/no/maybe
+3. social_satisfication (int): scale 1-5 about social life satification
+4. org_count(chr) : 0-1/2-3/...
+
+
+```{r}
+# 1. identity vs activity_participation, 2 categorical -> bar graph
+ggplot(data = df, aes(x=identity, fill=activity_participation)) + 
+  geom_bar(position="dodge") +  # Use "stack" for stacked bars
+  labs(title="Living Situation vs Activity Participation", x="Living Situation", y="Activity Participation")
+
+```
+
+```{r}
+# 2. identity vs social_satisfication, 1 numerical 1 categorical -> bot plot/violin plot
+ggplot(df, aes(x=identity, y=social_satisfication)) +
+  geom_dotplot(binaxis="y", stackdir="center", dotsize=0.5) +
+  labs(title="Living Situation vs Overall Participation (dot plot)", x="Living Situation", y="Social Satisfaction")
+
+ggplot(df, aes(x=identity, y=social_satisfication, fill=identity)) +
+  geom_violin(alpha=0.5) +
+  labs(title="Living Situation vs Overall Participation (violin plot)", x="Living Situation", y="Social Satisfaction")
+
 ```
 ```{r}
-#convert "" into NA
-df[df == ""] <- NA
-
-#test again
-sum(df == "")
-
-sum(df$`What.is.your.primary.mode.of.transportation.` == "")
-
+# 3. identity vs org_count, 2 categorical -> bar graph
+ggplot(data = df, aes(x=identity, fill=org_count)) + 
+  geom_bar(position="dodge") + 
+  labs(title="Living Situation vs Organization Count", x="Living Situation", y="Organization Count")
 ```
 
+```{r}
+# 4. overall_participation: activity_participation * org_count(chr), 1 numerical 1 categorical -> bot plot/violin plot
+# convert the activity_participation into numeric variable: yes = 2, no = 1, maybe = 1.5
+# convert the org_count into numeric variable: average of the interval
+
+activity_vector <- ifelse(df$activity_participation == "Yes", 2, 
+                          ifelse(df$activity_participation == "No", 1, 
+                          1.5))
+
+org_count_numeric <- ifelse(df$org_count == "0-1", 0.5, 
+                            ifelse(df$org_count == "2-3", 2.5, 
+                                   ifelse(df$org_count == "4-5", 4.5, 
+                                          6)))
+
+overall_participation <- activity_vector * org_count_numeric
+
+ggplot(df, aes(x=identity, y=overall_participation)) +
+  geom_dotplot(binaxis="y", stackdir="center", dotsize=0.5) +
+  labs(title="Living Situation vs Overall Participation (dot plot)", x="Living Situation", y="Overall Participation")
+
+ggplot(df, aes(x=identity, y=overall_participation, fill=identity)) +
+  geom_violin(alpha=0.5) +
+  labs(title="Living Situation vs Overall Participation (violin plot)", x="Living Situation", y="Overall Participation")
+
+
+```
 
 
